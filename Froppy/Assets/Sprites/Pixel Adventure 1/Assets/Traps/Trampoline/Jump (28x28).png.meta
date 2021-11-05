@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: bc4238dfff993d1439c8d88324ac7e17
+guid: 5f67602c85a27a847aed4d15b8e0339e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5445952789603759768
-    second: FroogSpriteSheet_0
+      213: -3008879249828299126
+    second: Jump (28x28)_0
   - first:
-      213: -4506282453930954217
-    second: FroogSpriteSheet_1
+      213: 4681692366024343091
+    second: Jump (28x28)_1
   - first:
-      213: 4146263672266224875
-    second: FroogSpriteSheet_2
+      213: -4280839998127415039
+    second: Jump (28x28)_2
   - first:
-      213: -3135775652446415290
-    second: FroogSpriteSheet_3
+      213: 6018414194862253689
+    second: Jump (28x28)_3
   - first:
-      213: 8806087702684829921
-    second: FroogSpriteSheet_4
+      213: 3596417087806819594
+    second: Jump (28x28)_4
   - first:
-      213: 427727719338672842
-    second: FroogSpriteSheet_5
+      213: 6008391082630914036
+    second: Jump (28x28)_5
   - first:
-      213: -4894258519424268426
-    second: FroogSpriteSheet_6
+      213: 6130167964694822903
+    second: Jump (28x28)_6
   - first:
-      213: -4549359971731846330
-    second: FroogSpriteSheet_7
-  - first:
-      213: -2924466964435404911
-    second: FroogSpriteSheet_8
-  - first:
-      213: 3653097089682102284
-    second: FroogSpriteSheet_9
+      213: 4513304123404435328
+    second: Jump (28x28)_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -62,7 +56,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -76,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -91,14 +85,14 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,43 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FroogSpriteSheet_0
+      name: Jump (28x28)_0
       rect:
         serializedVersion: 2
-        x: 609
-        y: 518
-        width: 88
-        height: 62
+        x: 0
+        y: 0
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 869ce10bac61c64b0800000000000000
-      internalID: -5445952789603759768
+      spriteID: f11d99c5f3b1e3440a58c630f5f565f3
+      internalID: -3008879249828299126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_1
+      name: Jump (28x28)_1
       rect:
         serializedVersion: 2
-        x: 724
-        y: 510
-        width: 62
-        height: 47
+        x: 28
+        y: 0
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 712bed3cbf77671c0800000000000000
-      internalID: -4506282453930954217
+      spriteID: cc6cddea24ab0cc44837d79d06c500ee
+      internalID: 4681692366024343091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_2
+      name: Jump (28x28)_2
       rect:
         serializedVersion: 2
-        x: 805
-        y: 512
-        width: 87
-        height: 61
+        x: 56
+        y: 0
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be4f88297dc7a8930800000000000000
-      internalID: 4146263672266224875
+      spriteID: ffccdbfec87e16a4cb95b0d668dee487
+      internalID: -4280839998127415039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_3
+      name: Jump (28x28)_3
       rect:
         serializedVersion: 2
-        x: 946
-        y: 498
-        width: 54
-        height: 51
+        x: 84
+        y: 0
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 646dc9c78ac7b74d0800000000000000
-      internalID: -3135775652446415290
+      spriteID: c3f4a1a002e27554590a92b140a4159a
+      internalID: 6018414194862253689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_4
+      name: Jump (28x28)_4
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 497
-        width: 57
-        height: 50
+        x: 112
+        y: 0
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e80773eb12853a70800000000000000
-      internalID: 8806087702684829921
+      spriteID: 6ac6ac8c36dc73748a9c0a37b06206af
+      internalID: 3596417087806819594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_5
+      name: Jump (28x28)_5
       rect:
         serializedVersion: 2
-        x: 1147
-        y: 497
-        width: 57
-        height: 50
+        x: 140
+        y: 0
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac205c338189fe500800000000000000
-      internalID: 427727719338672842
+      spriteID: 5197378fbff6b9e428a574f27e7610e9
+      internalID: 6008391082630914036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_6
+      name: Jump (28x28)_6
       rect:
         serializedVersion: 2
-        x: 1238
-        y: 497
-        width: 57
-        height: 50
+        x: 168
+        y: 0
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67789c6bec9141cb0800000000000000
-      internalID: -4894258519424268426
+      spriteID: 0b83726f6f9d30d4dbaedf625932d8da
+      internalID: 6130167964694822903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_7
+      name: Jump (28x28)_7
       rect:
         serializedVersion: 2
-        x: 597
-        y: 417
-        width: 100
-        height: 61
+        x: 196
+        y: 0
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,50 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64bca81953d6dd0c0800000000000000
-      internalID: -4549359971731846330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FroogSpriteSheet_8
-      rect:
-        serializedVersion: 2
-        x: 719
-        y: 415
-        width: 72
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19776735ac43a67d0800000000000000
-      internalID: -2924466964435404911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FroogSpriteSheet_9
-      rect:
-        serializedVersion: 2
-        x: 822
-        y: 423
-        width: 101
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c08d388b27862b230800000000000000
-      internalID: 3653097089682102284
+      spriteID: 3a27820aa43264f4987ee5faeb8364c3
+      internalID: 4513304123404435328
       vertices: []
       indices: 
       edges: []

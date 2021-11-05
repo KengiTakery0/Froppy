@@ -1,37 +1,52 @@
 fileFormatVersion: 2
-guid: bc4238dfff993d1439c8d88324ac7e17
+guid: 413986c4a668c374d8de72a47621b531
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5445952789603759768
-    second: FroogSpriteSheet_0
+      213: -5742017059485446288
+    second: Terrain (16x16) 1_0
   - first:
-      213: -4506282453930954217
-    second: FroogSpriteSheet_1
+      213: 7720078550713291429
+    second: Terrain (16x16) 1_1
   - first:
-      213: 4146263672266224875
-    second: FroogSpriteSheet_2
+      213: 3324791916300770321
+    second: Terrain (16x16) 1_2
   - first:
-      213: -3135775652446415290
-    second: FroogSpriteSheet_3
+      213: -2670375232149954509
+    second: Terrain (16x16) 1_3
   - first:
-      213: 8806087702684829921
-    second: FroogSpriteSheet_4
+      213: 2620999850736420264
+    second: Terrain (16x16) 1_4
   - first:
-      213: 427727719338672842
-    second: FroogSpriteSheet_5
+      213: 3960460497668127647
+    second: Terrain (16x16) 1_5
   - first:
-      213: -4894258519424268426
-    second: FroogSpriteSheet_6
+      213: -2855676163392102926
+    second: Terrain (16x16) 1_6
   - first:
-      213: -4549359971731846330
-    second: FroogSpriteSheet_7
+      213: 1959242234642493429
+    second: Terrain (16x16) 1_7
   - first:
-      213: -2924466964435404911
-    second: FroogSpriteSheet_8
+      213: -5467818790455678805
+    second: Terrain (16x16) 1_8
   - first:
-      213: 3653097089682102284
-    second: FroogSpriteSheet_9
+      213: -3772788190681173310
+    second: Terrain (16x16) 1_9
+  - first:
+      213: -7347219255181986903
+    second: Terrain (16x16) 1_10
+  - first:
+      213: 83881842087414782
+    second: Terrain (16x16) 1_11
+  - first:
+      213: -7419515092152464958
+    second: Terrain (16x16) 1_12
+  - first:
+      213: 7943464550610457251
+    second: Terrain (16x16) 1_13
+  - first:
+      213: -4540417752536426878
+    second: Terrain (16x16) 1_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -62,7 +77,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -76,7 +91,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -91,14 +106,14 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,7 +125,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,7 +137,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,7 +149,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,7 +161,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,211 +172,316 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FroogSpriteSheet_0
+      name: Terrain (16x16) 1_0
       rect:
         serializedVersion: 2
-        x: 609
-        y: 518
-        width: 88
-        height: 62
+        x: 0
+        y: 128
+        width: 80
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 869ce10bac61c64b0800000000000000
-      internalID: -5445952789603759768
+      spriteID: 07f032b28e14050b0800000000000000
+      internalID: -5742017059485446288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_1
+      name: Terrain (16x16) 1_1
       rect:
         serializedVersion: 2
-        x: 724
-        y: 510
-        width: 62
-        height: 47
+        x: 96
+        y: 128
+        width: 48
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 712bed3cbf77671c0800000000000000
-      internalID: -4506282453930954217
+      spriteID: 5a2d0650a8a332b60800000000000000
+      internalID: 7720078550713291429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_2
+      name: Terrain (16x16) 1_2
       rect:
         serializedVersion: 2
-        x: 805
-        y: 512
-        width: 87
-        height: 61
+        x: 192
+        y: 128
+        width: 64
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be4f88297dc7a8930800000000000000
-      internalID: 4146263672266224875
+      spriteID: 11c9233e1a8042e20800000000000000
+      internalID: 3324791916300770321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_3
+      name: Terrain (16x16) 1_3
       rect:
         serializedVersion: 2
-        x: 946
-        y: 498
-        width: 54
-        height: 51
+        x: 272
+        y: 171
+        width: 48
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 646dc9c78ac7b74d0800000000000000
-      internalID: -3135775652446415290
+      spriteID: 33063b6efdbe0fad0800000000000000
+      internalID: -2670375232149954509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_4
+      name: Terrain (16x16) 1_4
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 497
-        width: 57
-        height: 50
+        x: 272
+        y: 155
+        width: 48
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e80773eb12853a70800000000000000
-      internalID: 8806087702684829921
+      spriteID: 8a50f734a79af5420800000000000000
+      internalID: 2620999850736420264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_5
+      name: Terrain (16x16) 1_5
       rect:
         serializedVersion: 2
-        x: 1147
-        y: 497
-        width: 57
-        height: 50
+        x: 272
+        y: 139
+        width: 48
+        height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac205c338189fe500800000000000000
-      internalID: 427727719338672842
+      spriteID: f9bb976d6d166f630800000000000000
+      internalID: 3960460497668127647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_6
+      name: Terrain (16x16) 1_6
       rect:
         serializedVersion: 2
-        x: 1238
-        y: 497
-        width: 57
-        height: 50
+        x: 0
+        y: 64
+        width: 80
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67789c6bec9141cb0800000000000000
-      internalID: -4894258519424268426
+      spriteID: 2fd967fc8a99e58d0800000000000000
+      internalID: -2855676163392102926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_7
+      name: Terrain (16x16) 1_7
       rect:
         serializedVersion: 2
-        x: 597
-        y: 417
-        width: 100
-        height: 61
+        x: 96
+        y: 64
+        width: 80
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64bca81953d6dd0c0800000000000000
-      internalID: -4549359971731846330
+      spriteID: 5ffeec09e60a03b10800000000000000
+      internalID: 1959242234642493429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_8
+      name: Terrain (16x16) 1_8
       rect:
         serializedVersion: 2
-        x: 719
-        y: 415
-        width: 72
-        height: 47
+        x: 192
+        y: 64
+        width: 64
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19776735ac43a67d0800000000000000
-      internalID: -2924466964435404911
+      spriteID: ba8eea2a7c76e14b0800000000000000
+      internalID: -5467818790455678805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_9
+      name: Terrain (16x16) 1_9
       rect:
         serializedVersion: 2
-        x: 822
-        y: 423
-        width: 101
-        height: 61
+        x: 272
+        y: 64
+        width: 80
+        height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c08d388b27862b230800000000000000
-      internalID: 3653097089682102284
+      spriteID: 2c2f8a1312d54abc0800000000000000
+      internalID: -3772788190681173310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3b7ffb30f690a90800000000000000
+      internalID: -7347219255181986903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 80
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbc9b847120a2100800000000000000
+      internalID: 83881842087414782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c94a9e7556980990800000000000000
+      internalID: -7419515092152464958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a25b092ceadc3e60800000000000000
+      internalID: 7943464550610457251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_14
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28650383c123df0c0800000000000000
+      internalID: -4540417752536426878
       vertices: []
       indices: 
       edges: []

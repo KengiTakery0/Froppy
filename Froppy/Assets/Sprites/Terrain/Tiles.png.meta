@@ -1,37 +1,25 @@
 fileFormatVersion: 2
-guid: bc4238dfff993d1439c8d88324ac7e17
+guid: 69148c1d3712dc545aec8c02c5c59826
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5445952789603759768
-    second: FroogSpriteSheet_0
+      213: 7223950226953391895
+    second: Tiles_0
   - first:
-      213: -4506282453930954217
-    second: FroogSpriteSheet_1
+      213: -8377130690987618698
+    second: Tiles_1
   - first:
-      213: 4146263672266224875
-    second: FroogSpriteSheet_2
+      213: -4684333735789482159
+    second: Tiles_2
   - first:
-      213: -3135775652446415290
-    second: FroogSpriteSheet_3
+      213: -5062486230716756072
+    second: Tiles_3
   - first:
-      213: 8806087702684829921
-    second: FroogSpriteSheet_4
+      213: 4099902767569298868
+    second: Tiles_4
   - first:
-      213: 427727719338672842
-    second: FroogSpriteSheet_5
-  - first:
-      213: -4894258519424268426
-    second: FroogSpriteSheet_6
-  - first:
-      213: -4549359971731846330
-    second: FroogSpriteSheet_7
-  - first:
-      213: -2924466964435404911
-    second: FroogSpriteSheet_8
-  - first:
-      213: 3653097089682102284
-    second: FroogSpriteSheet_9
+      213: -6833445872158455971
+    second: Tiles_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -76,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FroogSpriteSheet_0
+      name: Tiles_0
       rect:
         serializedVersion: 2
-        x: 609
-        y: 518
-        width: 88
-        height: 62
+        x: 47
+        y: 976
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 869ce10bac61c64b0800000000000000
-      internalID: -5445952789603759768
+      spriteID: 71fc8a01570a04460800000000000000
+      internalID: 7223950226953391895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_1
+      name: Tiles_1
       rect:
         serializedVersion: 2
-        x: 724
-        y: 510
-        width: 62
-        height: 47
+        x: 96
+        y: 976
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +180,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 712bed3cbf77671c0800000000000000
-      internalID: -4506282453930954217
+      spriteID: 67e09ae35047ebb80800000000000000
+      internalID: -8377130690987618698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_2
+      name: Tiles_2
       rect:
         serializedVersion: 2
-        x: 805
-        y: 512
-        width: 87
-        height: 61
+        x: 181
+        y: 1007
+        width: 46
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be4f88297dc7a8930800000000000000
-      internalID: 4146263672266224875
+      spriteID: 15fa3e43947edfeb0800000000000000
+      internalID: -4684333735789482159
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_3
+      name: Tiles_3
       rect:
         serializedVersion: 2
-        x: 946
-        y: 498
-        width: 54
-        height: 51
+        x: 212
+        y: 980
+        width: 16
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 646dc9c78ac7b74d0800000000000000
-      internalID: -3135775652446415290
+      spriteID: 89f42d9689f6eb9b0800000000000000
+      internalID: -5062486230716756072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_4
+      name: Tiles_4
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 497
-        width: 57
-        height: 50
+        x: 57
+        y: 940
+        width: 32
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e80773eb12853a70800000000000000
-      internalID: 8806087702684829921
+      spriteID: 4b5eb9a48d7c5e830800000000000000
+      internalID: 4099902767569298868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_5
+      name: Tiles_5
       rect:
         serializedVersion: 2
-        x: 1147
-        y: 497
-        width: 57
-        height: 50
+        x: 144
+        y: 992
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,92 +264,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac205c338189fe500800000000000000
-      internalID: 427727719338672842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FroogSpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 1238
-        y: 497
-        width: 57
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67789c6bec9141cb0800000000000000
-      internalID: -4894258519424268426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FroogSpriteSheet_7
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 417
-        width: 100
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64bca81953d6dd0c0800000000000000
-      internalID: -4549359971731846330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FroogSpriteSheet_8
-      rect:
-        serializedVersion: 2
-        x: 719
-        y: 415
-        width: 72
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19776735ac43a67d0800000000000000
-      internalID: -2924466964435404911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FroogSpriteSheet_9
-      rect:
-        serializedVersion: 2
-        x: 822
-        y: 423
-        width: 101
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c08d388b27862b230800000000000000
-      internalID: 3653097089682102284
+      spriteID: d57c2263f29ba21a0800000000000000
+      internalID: -6833445872158455971
       vertices: []
       indices: 
       edges: []
