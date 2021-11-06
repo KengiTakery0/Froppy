@@ -8,11 +8,15 @@ public class Controller : MonoBehaviour
     private bool isGrounded = false;
     private float horizonInput;
 
+    private Animator anim;
     private Rigidbody2D body;
+    private SpriteRenderer spritRenderer;
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        spritRenderer = GetComponent<SpriteRenderer>();
 
     }
 
@@ -20,22 +24,12 @@ public class Controller : MonoBehaviour
     {
         ChecGround();
     }
+
     private void Update()
     {
-
-
         if (Input.GetButton("Horizontal")) Moving();
 
-
-
-        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && isGrounded)
-        {
-            Jump();
-
-        }
-
-
-
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded) Jump();
     }
 
 
@@ -45,14 +39,7 @@ public class Controller : MonoBehaviour
         body.velocity = new Vector2((horizonInput * Speed * Time.deltaTime), body.velocity.y);
 
         //Change Direction
-        if (horizonInput > 0.01f)
-        {
-            transform.localScale = Vector3.one;
-        }
-        else if (horizonInput < -0.01f)
-        {
-            transform.localScale = new Vector3(-1f, 1, 1);
-        }
+        spritRenderer.flipX = horizonInput < 0.1f;
     }
     private void Jump()
     {
@@ -64,7 +51,7 @@ public class Controller : MonoBehaviour
     {
 
         Collider2D[] col = Physics2D.OverlapCircleAll(transform.position, 0.5f);
-        isGrounded = col.Length > 1f;
+        isGrounded = col.Length > 1;
 
     }
 }
