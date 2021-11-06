@@ -39,11 +39,11 @@ public class Controller : MonoBehaviour
 
     private void Update()
     {
-        if(isGrounded) State = PlayerState.Idle;
+        if (isGrounded) State = PlayerState.Idle;
 
         if (Input.GetButton("Horizontal")) Moving();
 
-        if (Input.GetButtonDown("Jump") && isGrounded) Jump();//Debug.Log("OK"); 
+        if (Input.GetButtonDown("Jump") && isGrounded) Jump();
     }
 
 
@@ -67,6 +67,7 @@ public class Controller : MonoBehaviour
 
         Collider2D[] col = Physics2D.OverlapCircleAll(transform.position, 0.5f);
         isGrounded = col.Length > 1;
+
         if (!isGrounded) State = PlayerState.Jump;
 
     }
