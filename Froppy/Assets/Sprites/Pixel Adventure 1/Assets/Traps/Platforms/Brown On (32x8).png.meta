@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: bc4238dfff993d1439c8d88324ac7e17
+guid: e242b62e7e6caee439fa1d024a8fa5bb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5445952789603759768
-    second: FroogSpriteSheet_0
+      213: -3932816638193255715
+    second: Brown On (32x8)_0
   - first:
-      213: -4506282453930954217
-    second: FroogSpriteSheet_1
+      213: 113249620649802049
+    second: Brown On (32x8)_1
   - first:
-      213: 4146263672266224875
-    second: FroogSpriteSheet_2
+      213: -3965723481977160693
+    second: Brown On (32x8)_2
   - first:
-      213: -3135775652446415290
-    second: FroogSpriteSheet_3
+      213: -8422671310359681190
+    second: Brown On (32x8)_3
   - first:
-      213: 8806087702684829921
-    second: FroogSpriteSheet_4
+      213: 6027122724756182200
+    second: Brown On (32x8)_4
   - first:
-      213: 427727719338672842
-    second: FroogSpriteSheet_5
+      213: 3059113826426795209
+    second: Brown On (32x8)_5
   - first:
-      213: -4894258519424268426
-    second: FroogSpriteSheet_6
+      213: 4722360788381041880
+    second: Brown On (32x8)_6
   - first:
-      213: -4549359971731846330
-    second: FroogSpriteSheet_7
-  - first:
-      213: -2924466964435404911
-    second: FroogSpriteSheet_8
-  - first:
-      213: 3653097089682102284
-    second: FroogSpriteSheet_9
+      213: -7345710839297778315
+    second: Brown On (32x8)_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -62,7 +56,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -76,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 48
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -91,14 +85,14 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -110,43 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FroogSpriteSheet_0
+      name: Brown On (32x8)_0
       rect:
         serializedVersion: 2
-        x: 609
-        y: 518
-        width: 88
-        height: 62
+        x: 0
+        y: 0
+        width: 32
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 869ce10bac61c64b0800000000000000
-      internalID: -5445952789603759768
+      spriteID: 3f1b4d0812a0bbc46930c942a83357ed
+      internalID: -3932816638193255715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_1
+      name: Brown On (32x8)_1
       rect:
         serializedVersion: 2
-        x: 724
-        y: 510
-        width: 62
-        height: 47
+        x: 32
+        y: 0
+        width: 32
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 712bed3cbf77671c0800000000000000
-      internalID: -4506282453930954217
+      spriteID: 495d82b1c6479594db3235fb6e3cf7ec
+      internalID: 113249620649802049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_2
+      name: Brown On (32x8)_2
       rect:
         serializedVersion: 2
-        x: 805
-        y: 512
-        width: 87
-        height: 61
+        x: 64
+        y: 0
+        width: 32
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be4f88297dc7a8930800000000000000
-      internalID: 4146263672266224875
+      spriteID: 161ab562e71e8cf41ab685ca081c8c85
+      internalID: -3965723481977160693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_3
+      name: Brown On (32x8)_3
       rect:
         serializedVersion: 2
-        x: 946
-        y: 498
-        width: 54
-        height: 51
+        x: 96
+        y: 0
+        width: 32
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 646dc9c78ac7b74d0800000000000000
-      internalID: -3135775652446415290
+      spriteID: cdbe1cf63db6cb745a3148e6cfd706d9
+      internalID: -8422671310359681190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_4
+      name: Brown On (32x8)_4
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 497
-        width: 57
-        height: 50
+        x: 128
+        y: 0
+        width: 32
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e80773eb12853a70800000000000000
-      internalID: 8806087702684829921
+      spriteID: fb0afa4b7d958a64ea0c4f0fc26d4e89
+      internalID: 6027122724756182200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_5
+      name: Brown On (32x8)_5
       rect:
         serializedVersion: 2
-        x: 1147
-        y: 497
-        width: 57
-        height: 50
+        x: 160
+        y: 0
+        width: 32
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac205c338189fe500800000000000000
-      internalID: 427727719338672842
+      spriteID: 09dc1b7a40dcba0499692a384b5bf65d
+      internalID: 3059113826426795209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_6
+      name: Brown On (32x8)_6
       rect:
         serializedVersion: 2
-        x: 1238
-        y: 497
-        width: 57
-        height: 50
+        x: 192
+        y: 0
+        width: 32
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67789c6bec9141cb0800000000000000
-      internalID: -4894258519424268426
+      spriteID: a2ba88b9d5c10524bb960adf9d485311
+      internalID: 4722360788381041880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FroogSpriteSheet_7
+      name: Brown On (32x8)_7
       rect:
         serializedVersion: 2
-        x: 597
-        y: 417
-        width: 100
-        height: 61
+        x: 224
+        y: 0
+        width: 32
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,50 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64bca81953d6dd0c0800000000000000
-      internalID: -4549359971731846330
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FroogSpriteSheet_8
-      rect:
-        serializedVersion: 2
-        x: 719
-        y: 415
-        width: 72
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19776735ac43a67d0800000000000000
-      internalID: -2924466964435404911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FroogSpriteSheet_9
-      rect:
-        serializedVersion: 2
-        x: 822
-        y: 423
-        width: 101
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c08d388b27862b230800000000000000
-      internalID: 3653097089682102284
+      spriteID: 11319983793eba34b92fa0b4a7ca6a6f
+      internalID: -7345710839297778315
       vertices: []
       indices: 
       edges: []
