@@ -28,7 +28,7 @@ public class Controller : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        spritRenderer = GetComponentInChildren<SpriteRenderer>();
+        spritRenderer = GetComponent<SpriteRenderer>();
 
     }
 

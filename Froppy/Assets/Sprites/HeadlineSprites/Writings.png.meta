@@ -5,6 +5,12 @@ TextureImporter:
   - first:
       213: -3503208698898519020
     second: Writings_0
+  - first:
+      213: -3307520675476184016
+    second: Writings_1
+  - first:
+      213: 7554325137824123936
+    second: Writings_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,6 +139,27 @@ TextureImporter:
       name: Writings_0
       rect:
         serializedVersion: 2
+        x: 95
+        y: 796
+        width: 174
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c6818cf3a126fc0800000000000000
+      internalID: -3503208698898519020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Writings_1
+      rect:
+        serializedVersion: 2
         x: 38
         y: 676
         width: 257
@@ -144,8 +171,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41c6818cf3a126fc0800000000000000
-      internalID: -3503208698898519020
+      spriteID: 0346bfa38735912d0800000000000000
+      internalID: -3307520675476184016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Writings_2
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 457
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c8fc530ba56d860800000000000000
+      internalID: 7554325137824123936
       vertices: []
       indices: 
       edges: []
