@@ -14,6 +14,9 @@ public class Portal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (!isOpen)
+        {
+          
+        }
     }
 }
