@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Star
   - Counter
+  - Portal
   layers:
   - Default
   - TransparentFX
