@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelChosser : MonoBehaviour
 {
- public void TraininLevel()
+    public void TraininLevel()
     {
         SceneManager.LoadScene("");
     }
