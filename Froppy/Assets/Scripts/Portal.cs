@@ -6,9 +6,6 @@ public class Portal : MonoBehaviour
 {
     public static bool isOpen;
     [SerializeField] private GameObject portalPref;
-    [SerializeField] private float portPosX;
-    [SerializeField] private float portPosy;
-
 
 
     private Vector2 pos;
@@ -24,7 +21,7 @@ public class Portal : MonoBehaviour
         {
             GameObject portPos = Instantiate(portalPref);
 
-            portPos.transform.position = new Vector2(portPosX, portPosy);
+            portPos.transform.position = new Vector2(transform.position.x, transform.position.y);
         }
     }
 
