@@ -17,7 +17,7 @@ public class TriggerConector : MonoBehaviour
                 Debug.Log(counter);
                 break;
             case "Portal":
-                LevelChosser.LoadLevelChoser();
+                LevelChosing.LoadLevelChoser();
                 break;
         }
         if (counter == 3)
