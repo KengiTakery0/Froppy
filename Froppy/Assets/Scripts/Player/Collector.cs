@@ -13,7 +13,7 @@ public class Collector : MonoBehaviour
         if (data.tag == "Star")
         {
             counter++;
-            Destroy(data.gameObject, 0.5f);
+            Destroy(data.gameObject, 0.2f);
             Debug.Log(counter);
 
         }
