@@ -13,19 +13,19 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float ClimbingSpeed = 100f;
 
     private bool isWalled = false;
-    private bool WallJump = false;
+    private bool wallJump = false;
 
     private float horizonInput;
-    private GroundChecer[] groundChecers;
+    private GroundChecker[] groundChecers;
 
     private bool canJump
     {
         get
         {
-            if (WallJump) return true;
+            if (wallJump) return true;
             else
             {
-                foreach (GroundChecer c in groundChecers) if (c.isGrounded()) return true;
+                foreach (GroundChecker c in groundChecers) if (c.isGrounded()) return true;
             }
             return false;
         }
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spritRenderer = GetComponent<SpriteRenderer>();
-        groundChecers = GetComponentsInChildren<GroundChecer>();
+        groundChecers = GetComponentsInChildren<GroundChecker>();
 
     }
 
@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
     }
     private void ProcessJumping()
     {
-        if (Input.GetButtonDown("Jump") && canJump) Jump();
+        if (Input.GetButtonDown("Jump")) Jump();
     }
     private void Moving()
     {
@@ -86,13 +86,18 @@ public class PlayerController : MonoBehaviour
         if (canJump)
         {
             body.velocity = new Vector2(body.velocity.x, JumpForce);
-            WallJump = false;
+            wallJump = false;
         }
     }
 
     public void setWalled(bool walled)
     {
         this.isWalled = walled;
+    }
+
+    public void SetCanJumpfromWall(bool canJump)
+    {
+        wallJump = canJump;
     }
     /*private void ChecGround()
     {
