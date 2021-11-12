@@ -7,7 +7,7 @@ public class LevelChosing : MonoBehaviour
 {
     public void TraininLevel()
     {
-        SceneManager.LoadScene("TraininLevel");
+        SceneManager.LoadScene("Level0(Training)");
     }
     public static void LoadLevelChoser()
     {

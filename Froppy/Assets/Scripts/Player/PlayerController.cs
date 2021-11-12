@@ -46,8 +46,8 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        anim = GetComponentInChildren<Animator>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         groundChecers = GetComponentsInChildren<GroundChecker>();
 
     }
@@ -69,10 +69,9 @@ public class PlayerController : MonoBehaviour
        // verticalInput = Input.GetAxis("Vertical");
         if (Input.GetButton("Vertical") & isWalled)
         {
-            body.AddForce(new Vector2(0, ClimbingSpeed * Time.deltaTime), ForceMode2D.Impulse);
-            transform.Rotate(0, 0, 90);
+            body.AddForce(new Vector2(0, ClimbingSpeed * Time.deltaTime), ForceMode2D.Impulse); 
         }
-        transform.Rotate(0, 0, 0);
+        
     }
 
     private void ProcessMooving()
@@ -113,7 +112,5 @@ public class PlayerController : MonoBehaviour
     {
         wallJump = canJump;
     }
-    
-
 
 }
