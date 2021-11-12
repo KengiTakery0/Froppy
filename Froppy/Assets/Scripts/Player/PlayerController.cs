@@ -8,14 +8,15 @@ enum PlayerState
 }
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float Speed = 100f;
-    [SerializeField] private float JumpForce = 100f;
-    [SerializeField] private float ClimbingSpeed = 100f;
+    [SerializeField] private float Speed = 4f;
+    [SerializeField] private float JumpForce = 5f;
+    [SerializeField] private float ClimbingSpeed = 5f;
 
     private bool isWalled = false;
     private bool wallJump = false;
 
     private float horizonInput;
+   // private float verticalInput;
     private GroundChecker[] groundChecers;
 
     private bool canJump
@@ -40,13 +41,13 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
     private Rigidbody2D body;
-    private SpriteRenderer spritRenderer;
+    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        spritRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         groundChecers = GetComponentsInChildren<GroundChecker>();
 
     }
@@ -60,12 +61,23 @@ public class PlayerController : MonoBehaviour
 
         ProcessMooving();
         ProcessJumping();
+        ProcessClimbing();
+    }
 
+    private void ProcessClimbing()
+    {
+       // verticalInput = Input.GetAxis("Vertical");
+        if (Input.GetButton("Vertical") & isWalled)
+        {
+            body.AddForce(new Vector2(0, ClimbingSpeed * Time.deltaTime), ForceMode2D.Impulse);
+            transform.Rotate(0, 0, 90);
+        }
+        transform.Rotate(0, 0, 0);
     }
 
     private void ProcessMooving()
     {
-        if (Input.GetButton("Horizontal")) Moving();
+        if (Input.GetButton("Horizontal") ) Moving();
     }
     private void ProcessJumping()
     {
@@ -77,10 +89,12 @@ public class PlayerController : MonoBehaviour
         body.velocity = new Vector2((horizonInput * Speed * Time.deltaTime), body.velocity.y);
 
         //Change Direction
-        spritRenderer.flipX = horizonInput < 0.1f;
+        spriteRenderer.flipX = horizonInput < 0.1f;
 
         if (canJump) State = PlayerState.Run;
     }
+
+    
     private void Jump()
     {
         if (canJump)
@@ -99,15 +113,7 @@ public class PlayerController : MonoBehaviour
     {
         wallJump = canJump;
     }
-    /*private void ChecGround()
-    {
-
-        Collider2D[] col = Physics2D.OverlapCircleAll(transform.position, 0.5f);
-        isGrounded = col.Length > 1;
-
-        if (!isGrounded) State = PlayerState.Jump;
-
-    }*/
+    
 
 
 }
