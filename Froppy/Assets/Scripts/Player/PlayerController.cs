@@ -66,12 +66,18 @@ public class PlayerController : MonoBehaviour
 
     private void ProcessClimbing()
     {
-       // verticalInput = Input.GetAxis("Vertical");
+        // verticalInput = Input.GetAxis("Vertical");
         if (Input.GetButton("Vertical") & isWalled)
         {
+<<<<<<< HEAD
             body.AddForce(new Vector2(0, ClimbingSpeed * Time.deltaTime), ForceMode2D.Impulse); 
         }
         
+=======
+            body.AddForce(new Vector2(0, ClimbingSpeed * Time.deltaTime), ForceMode2D.Impulse);
+            transform.Rotate(0, 0, 90);
+        } 
+>>>>>>> d49c682604c5c64331164bd194f4943b11a8daab
     }
 
     private void ProcessMooving()
