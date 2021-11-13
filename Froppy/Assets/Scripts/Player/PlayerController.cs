@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     private bool wallJump = false;
 
     private float horizonInput;
-   // private float verticalInput;
+    private float verticalInput;
     private GroundChecker[] groundChecers;
 
     private bool canJump
@@ -66,12 +66,15 @@ public class PlayerController : MonoBehaviour
 
     private void ProcessClimbing()
     {
-        // verticalInput = Input.GetAxis("Vertical");
+         verticalInput = Input.GetAxis("Vertical");
         if (Input.GetButton("Vertical") & isWalled)
         {
 
             body.AddForce(new Vector2(0, ClimbingSpeed * Time.deltaTime), ForceMode2D.Impulse);
+            
         }
+       
+        
     }
 
     private void ProcessMooving()
@@ -112,5 +115,7 @@ public class PlayerController : MonoBehaviour
     {
         wallJump = canJump;
     }
+
+   
 
 }

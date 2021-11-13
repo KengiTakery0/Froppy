@@ -35,12 +35,19 @@ public class PauseMenu : MonoBehaviour
         isGamePaused = true;
     }
 
-    public void MainMenue()
+    public void MainMenu()
     {
-
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void Option()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("OptionsMenu");
     }
     public void QuitGame()
     {
-
+        Application.Quit();
+       // PlayerController.SavePlayer();
     }
 }
