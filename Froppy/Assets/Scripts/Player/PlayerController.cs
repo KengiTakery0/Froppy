@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float JumpForce = 5f;
     [SerializeField] private float ClimbingSpeed = 5f;
 
+    public static float positionX;
+    public static float positionY;
+
+
     private bool isWalled = false;
     private bool wallJump = false;
 
@@ -49,6 +53,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         groundChecers = GetComponentsInChildren<GroundChecker>();
+        SqlConnection.SavePLayerPos(positionX, positionY);
 
     }
 
@@ -57,34 +62,42 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         if (canJump) State = PlayerState.Idle;
+        if (!canJump) State = PlayerState.Jump;
 
 
         ProcessMooving();
         ProcessJumping();
         ProcessClimbing();
+        positionX = transform.position.x;
+        positionY = transform.position.y;
     }
 
+
+
+    private void ProcessMooving()
+    {
+        if (Input.GetButton("Horizontal")) Moving();
+    }
+    private void ProcessJumping()
+    {
+        if (Input.GetButtonDown("Jump"))
+        {
+            State = PlayerState.Jump; Jump();
+        }
+
+    }
     private void ProcessClimbing()
     {
-         verticalInput = Input.GetAxis("Vertical");
+        verticalInput = Input.GetAxis("Vertical");
         if (Input.GetButton("Vertical") & isWalled)
         {
 
             body.AddForce(new Vector2(0, ClimbingSpeed * Time.deltaTime), ForceMode2D.Impulse);
-            
+
         }
-       
-        
     }
 
-    private void ProcessMooving()
-    {
-        if (Input.GetButton("Horizontal") ) Moving();
-    }
-    private void ProcessJumping()
-    {
-        if (Input.GetButtonDown("Jump")) Jump();
-    }
+
     private void Moving()
     {
         horizonInput = Input.GetAxis("Horizontal");
@@ -96,13 +109,15 @@ public class PlayerController : MonoBehaviour
         if (canJump) State = PlayerState.Run;
     }
 
-    
+
     private void Jump()
     {
         if (canJump)
         {
+
             body.velocity = new Vector2(body.velocity.x, JumpForce);
             wallJump = false;
+
         }
     }
 
@@ -116,6 +131,6 @@ public class PlayerController : MonoBehaviour
         wallJump = canJump;
     }
 
-   
+
 
 }
