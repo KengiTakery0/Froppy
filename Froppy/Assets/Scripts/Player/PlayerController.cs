@@ -12,8 +12,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float JumpForce = 5f;
     [SerializeField] private float ClimbingSpeed = 5f;
 
-    public static float positionX;
-    public static float positionY;
 
 
     private bool isWalled = false;
@@ -53,7 +51,8 @@ public class PlayerController : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         groundChecers = GetComponentsInChildren<GroundChecker>();
-        SqlConnection.SavePLayerPos(positionX, positionY);
+        SqlConnection.SetConnection();
+        Debug.Log(@$"INSERT INTO PlayerPosition (Position_X,Position_Y) VALUES ({1.3f},{1})");
 
     }
 
@@ -68,8 +67,7 @@ public class PlayerController : MonoBehaviour
         ProcessMooving();
         ProcessJumping();
         ProcessClimbing();
-        positionX = transform.position.x;
-        positionY = transform.position.y;
+        SqlConnection.SavePLayerPos(transform.position.x, transform.position.y);
     }
 
 
