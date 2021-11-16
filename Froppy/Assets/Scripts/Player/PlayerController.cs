@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         groundChecers = GetComponentsInChildren<GroundChecker>();
         SqlConnection.SetConnection();
-        Debug.Log(@$"INSERT INTO PlayerPosition (Position_X,Position_Y) VALUES ({1.3f},{1})");
+       
 
     }
 

@@ -11,7 +11,7 @@ public static class SqlConnection
     public static SqliteConnection connection;
     private static string dbPath;
     private static SqliteCommand command;
-    private static string file = "/SqliteDatabase/Froppy.bytes";
+    private static string file = "/SqliteDatabase/Froppy.";
 
     public static void SetConnection()
     {
@@ -29,11 +29,10 @@ public static class SqlConnection
     {
         if (connection.State == ConnectionState.Open)
         {
-            string s =Convert.ToString(posX);
-            string f =Convert.ToString(posY);
             command = new SqliteCommand();
             command.Connection = connection;
-            command.CommandText = @$"INSERT INTO PlayerPosition (Position_X,Position_Y) VALUES ({s},{f})";
+            Debug.Log($"INSERT INTO PlayerPosition(Position_X, Position_Y) VALUES({posX},{posY})");
+            command.CommandText = @$"INSERT INTO PlayerPosition (Position_X,Position_Y) VALUES ({posX},{posY})";
 /*            command.Parameters.Add(new SqliteParameter("X", posX));
             command.Parameters.Add(new SqliteParameter("Y", posY));*/
             command.ExecuteNonQuery();

@@ -6,21 +6,23 @@ using UnityEngine.SceneManagement;
 public class TriggerConector : MonoBehaviour
 {
 
-    private int counter = 0;
+    private int collectCounter = 0;
+    public static int portalCounter = 0;  
     private void OnTriggerEnter2D(Collider2D data)
     {
         switch (data.tag)
         {
             case "Star":
-                counter++;
+                collectCounter++;
                 Destroy(data.gameObject, 0.1f);
-                Debug.Log(counter);
+                Debug.Log(collectCounter);
                 break;
             case "Portal":
+                portalCounter++;    
                 LevelChosing.LoadLevelChoser();
                 break;
         }
-        if (counter == 3)
+        if (collectCounter == 3)
         {
             Portal.isOpen = true;
         }
