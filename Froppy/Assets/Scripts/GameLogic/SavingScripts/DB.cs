@@ -1,7 +1,7 @@
 using Mono.Data.Sqlite;
-using System;
 using UnityEngine;
 using System.Data;
+using System;
 
 public static class DB
 {
@@ -12,11 +12,16 @@ public static class DB
     {
         get
         {
+
             DB.Open();
-            using SqliteDataReader rd = DB.SelectAll("saves");
-            bool b = rd.HasRows;
+            using SqliteDataReader dataReader = DB.SelectAll("saves");
+<<<<<<< HEAD
+            bool b = dataReader.HasRows;
+=======
+            bool boolHasRecords = dataReader.HasRows;
+>>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
             DB.Close();
-            return b;
+            return boolHasRecords;
         }
     }
 
@@ -40,17 +45,39 @@ public static class DB
         connection.Open();
     }
 
+<<<<<<< HEAD
+    internal static LevelInfo[] GetLevels()
+    {
+        throw new NotImplementedException();
+    }
+=======
+    public static string GetLevels(LevelInfo[] levels)
+    {
+/*        string[] levelsinfo = new string[levels.Length];
+        for (int i = 0; i < levelsinfo.Length; i++)
+        {
+           levelsinfo[i] = $"({i+1},'{JsonUtility.FromJson<LevelInfo[]>(stringifyedLevels)}')";
+        }*/
+        DB.Open();
+        SqliteCommand cmd = connection.CreateCommand();
+        cmd.CommandText = "SELECT * FROM saves";;
+        DB.Close();
+        throw new NotImplementedException();
+    }
+
+>>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
     public static void InsertLevels(LevelInfo[] levels)
     {
         string[] stringifyedLevels = new string[levels.Length];
         for (int i = 0; i < levels.Length; i++)
         {
-            stringifyedLevels[i] = $"({i+1}, '{JsonUtility.ToJson(levels[i])}')";            
+            stringifyedLevels[i] = $"({i + 1}, '{JsonUtility.ToJson(levels[i])}')";
         }
         DB.Open();
         SqliteCommand cmd = connection.CreateCommand();
         cmd.CommandText = $"INSERT INTO saves (level, data) VALUES {string.Join(",", stringifyedLevels)};";
-        cmd.ExecuteNonQuery(); 
+        cmd.ExecuteNonQuery();
         DB.Close();
     }
+
 }

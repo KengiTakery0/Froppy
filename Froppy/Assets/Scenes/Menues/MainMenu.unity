@@ -1012,8 +1012,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1437757452}
   - component: {fileID: 1437757451}
-  - component: {fileID: 1437757450}
   - component: {fileID: 1437757453}
+  - component: {fileID: 1437757450}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1098,6 +1098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f65030e4ca4bbb4b9b0d02dc8e62c04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  databasePath: /SqliteDatabase/Froppy.sqlite3
 --- !u!1 &1635272915
 GameObject:
   m_ObjectHideFlags: 0

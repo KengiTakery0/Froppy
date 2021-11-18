@@ -7,7 +7,7 @@ public class TriggerConector : MonoBehaviour
 {
 
     private int collectCounter = 0;
-    public static int portalCounter = 0;  
+ 
     private void OnTriggerEnter2D(Collider2D data)
     {
         switch (data.tag)
@@ -18,7 +18,6 @@ public class TriggerConector : MonoBehaviour
                 Debug.Log(collectCounter);
                 break;
             case "Portal":
-                portalCounter++;    
                 LevelChosing.LoadLevelChoser();
                 break;
         }

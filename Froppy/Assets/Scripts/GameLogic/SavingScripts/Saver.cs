@@ -21,7 +21,7 @@ public class Saver : MonoBehaviour
     private void IniSave()
     {
         List<LevelInfo> levels = new List<LevelInfo>();
-        for (int i = 0; i < SceneManager.sceneCountInBuildSettings - 2; i++)
+        for (int i = 0; i < SceneManager.sceneCountInBuildSettings - 3; i++)
         {
             LevelInfo level = new LevelInfo() { playerData = new PlayerData() { x = 0, y = 0 } };
             levels.Add(level);

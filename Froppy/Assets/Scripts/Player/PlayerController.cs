@@ -51,9 +51,12 @@ public class PlayerController : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         groundChecers = GetComponentsInChildren<GroundChecker>();
-        SqlConnection.SetConnection();
+<<<<<<< HEAD
+     
        
 
+=======
+>>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
     }
 
 
@@ -67,7 +70,7 @@ public class PlayerController : MonoBehaviour
         ProcessMooving();
         ProcessJumping();
         ProcessClimbing();
-        SqlConnection.SavePLayerPos(transform.position.x, transform.position.y);
+       
     }
 
 

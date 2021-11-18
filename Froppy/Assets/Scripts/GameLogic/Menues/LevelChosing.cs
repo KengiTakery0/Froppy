@@ -21,11 +21,7 @@ public class LevelChosing : MonoBehaviour
         level2.interactable = false;
         level3.interactable = false;
 
-        /*        trainingLevel = GetComponent<Button>(); 
-                level1 = GetComponentInChildren<Button>();    
-                level2 = GetComponent<Button>();    
-                level3 =  */
-        switch (TriggerConector.portalCounter)
+       /* switch (TriggerConector.portalCounter)
         {
             case 1:
                 level1.interactable = true;
@@ -33,7 +29,7 @@ public class LevelChosing : MonoBehaviour
             case 2:
                 level2.interactable = true;
                 break;
-        }
+        }*/
     }
 
 

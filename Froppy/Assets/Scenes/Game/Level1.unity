@@ -5196,11 +5196,11 @@ MonoBehaviour:
   m_ScreenX: 0.54
   m_ScreenY: 0.70000005
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.15
+  m_DeadZoneWidth: 0.1
   m_DeadZoneHeight: 0.13
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
+  m_SoftZoneWidth: 2
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: -0.00000009934107
