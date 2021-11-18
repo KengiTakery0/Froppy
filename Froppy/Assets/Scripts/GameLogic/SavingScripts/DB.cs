@@ -13,10 +13,10 @@ public static class DB
         get
         {
             DB.Open();
-            using SqliteDataReader rd = DB.SelectAll("saves");
-            bool b = rd.HasRows;
+            using SqliteDataReader dataReader = DB.SelectAll("saves");
+            bool boolHasRecords = dataReader.HasRows;
             DB.Close();
-            return b;
+            return boolHasRecords;
         }
     }
 
@@ -38,6 +38,20 @@ public static class DB
     {
         connection = new SqliteConnection("URI=file:" + Application.dataPath + DatabasePath);
         connection.Open();
+    }
+
+    public static string GetLevels(LevelInfo[] levels)
+    {
+/*        string[] levelsinfo = new string[levels.Length];
+        for (int i = 0; i < levelsinfo.Length; i++)
+        {
+           levelsinfo[i] = $"({i+1},'{JsonUtility.FromJson<LevelInfo[]>(stringifyedLevels)}')";
+        }*/
+        DB.Open();
+        SqliteCommand cmd = connection.CreateCommand();
+        cmd.CommandText = "SELECT * FROM saves";;
+        DB.Close();
+        throw new NotImplementedException();
     }
 
     public static void InsertLevels(LevelInfo[] levels)
