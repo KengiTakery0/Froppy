@@ -52,9 +52,12 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         groundChecers = GetComponentsInChildren<GroundChecker>();
 <<<<<<< HEAD
+<<<<<<< HEAD
      
        
 
+=======
+>>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
 =======
 >>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
     }

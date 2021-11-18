@@ -16,7 +16,11 @@ public static class DB
             DB.Open();
             using SqliteDataReader dataReader = DB.SelectAll("saves");
 <<<<<<< HEAD
+<<<<<<< HEAD
             bool b = dataReader.HasRows;
+=======
+            bool boolHasRecords = dataReader.HasRows;
+>>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
 =======
             bool boolHasRecords = dataReader.HasRows;
 >>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
@@ -46,11 +50,14 @@ public static class DB
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     internal static LevelInfo[] GetLevels()
     {
         throw new NotImplementedException();
     }
 =======
+=======
+>>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
     public static string GetLevels(LevelInfo[] levels)
     {
 /*        string[] levelsinfo = new string[levels.Length];
@@ -65,6 +72,9 @@ public static class DB
         throw new NotImplementedException();
     }
 
+<<<<<<< HEAD
+>>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
+=======
 >>>>>>> 6ca104d30f70822ebedd242a6bba51ebd6b557ca
     public static void InsertLevels(LevelInfo[] levels)
     {
