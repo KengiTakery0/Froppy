@@ -42,18 +42,21 @@ public static class DB
         connection.Open();
     }
 
-    public static string GetLevels(LevelInfo[] levels)
+    public static void GetLevels(LevelInfo[] levels)
     {
-/*        string[] levelsinfo = new string[levels.Length];
-        for (int i = 0; i < levelsinfo.Length; i++)
-        {
-           levelsinfo[i] = $"({i+1},'{JsonUtility.FromJson<LevelInfo[]>(stringifyedLevels)}')";
-        }*/
+        /*        string[] levelsinfo = new string[levels.Length];
+                for (int i = 0; i < levelsinfo.Length; i++)
+                {
+                   levelsinfo[i] = $"({i+1},'{JsonUtility.FromJson<LevelInfo[]>(stringifyedLevels)}')";
+                }*/
+        
         DB.Open();
         SqliteCommand cmd = connection.CreateCommand();
-        cmd.CommandText = "SELECT * FROM saves";;
+        cmd.CommandText = "SELECT * FROM saves";
+        cmd.ExecuteReader();
         DB.Close();
-        throw new NotImplementedException();
+
+        
     }
 
     public static void InsertLevels(LevelInfo[] levels)
