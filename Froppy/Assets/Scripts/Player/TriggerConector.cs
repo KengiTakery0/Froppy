@@ -13,13 +13,20 @@ public class TriggerConector : MonoBehaviour
         switch (data.tag)
         {
             case "Star":
-                collectCounter++;
-                Destroy(data.gameObject, 0.1f);
-                Debug.Log(collectCounter);
-                break;
+                {
+                    collectCounter++;
+                    Destroy(data.gameObject, 0.1f);
+                    Debug.Log(collectCounter);
+                    break;
+                }
             case "Portal":
-                LevelChosing.LoadLevelChoser();
-                break;
+                {
+                    Saver.Level.isPassed = true;
+                    Saver.Save();
+                    LevelChosing.LoadLevelChoser();
+                    break;
+                }
+                
         }
         if (collectCounter == 3)
         {

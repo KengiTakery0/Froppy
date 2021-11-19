@@ -9,17 +9,16 @@ public class LevelChosing : MonoBehaviour
     [SerializeField] private Button trainingLevel;
     [SerializeField] private Button level1;
     [SerializeField] private Button level2;
-    [SerializeField] private Button level3;
+    //[SerializeField] private Button level3;
 
     private int LevelComplite;
 
     private void Start()
     {
-        LevelComplite = PlayerPrefs.GetInt("LevelComplite");
-        trainingLevel.interactable = true;
-        level1.interactable = false;
-        level2.interactable = false;
-        level3.interactable = false;
+       // trainingLevel.interactable = true;
+        level1.interactable = true;
+        level2.interactable = Saver.Levels[0].isPassed;
+       // level3.interactable = false;
 
        /* switch (TriggerConector.portalCounter)
         {

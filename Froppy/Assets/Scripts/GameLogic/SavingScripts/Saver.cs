@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Saver : MonoBehaviour
 {
     public static LevelInfo[] Levels;
+    public static LevelInfo Level;
 
     [SerializeField] private string databasePath = "/SqliteDatabase/Froppy.sqlite3";
 
@@ -33,6 +34,13 @@ public class Saver : MonoBehaviour
 
     private static void LoadSave()
     {
-       // Levels = DB.GetLevels();
+        Levels = DB.GetLevels();
+    }
+
+    public static void Save()
+    {
+        Debug.Log(Level.playerData.x);
+        Debug.Log(Levels[1].playerData.x);
+        DB.SaveLevels(Levels);
     }
 }

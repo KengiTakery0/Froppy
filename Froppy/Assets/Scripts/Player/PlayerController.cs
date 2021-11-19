@@ -57,51 +57,42 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (canJump) State = PlayerState.Idle;
         if (!canJump) State = PlayerState.Jump;
 
-
         ProcessMooving();
-        ProcessJumping();
         ProcessClimbing();
-       
+        ProcessJumping();
     }
-
-
 
     private void ProcessMooving()
     {
-        if (Input.GetButton("Horizontal")) Moving();
+        Moving();
     }
+
     private void ProcessJumping()
     {
         if (Input.GetButtonDown("Jump"))
         {
             State = PlayerState.Jump; Jump();
         }
-
     }
     private void ProcessClimbing()
     {
         verticalInput = Input.GetAxis("Vertical");
         if (Input.GetButton("Vertical") & isWalled)
         {
-
             body.AddForce(new Vector2(0, ClimbingSpeed * Time.deltaTime), ForceMode2D.Impulse);
-
         }
     }
 
-
     private void Moving()
     {
-        horizonInput = Input.GetAxis("Horizontal");
+        horizonInput = Input.GetAxisRaw("Horizontal");
+        if (horizonInput != 0) State = PlayerState.Run;
+        else if (horizonInput == 0 && canJump) State = PlayerState.Idle;
+        spriteRenderer.flipX = horizonInput ==  -1;
+
         body.velocity = new Vector2((horizonInput * Speed * Time.deltaTime), body.velocity.y);
-
-        //Change Direction
-        spriteRenderer.flipX = horizonInput < 0.1f;
-
-        if (canJump) State = PlayerState.Run;
     }
 
 

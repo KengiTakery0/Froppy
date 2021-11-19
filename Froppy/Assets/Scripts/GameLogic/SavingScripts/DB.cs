@@ -2,6 +2,7 @@ using Mono.Data.Sqlite;
 using UnityEngine;
 using System.Data;
 using System;
+using System.Collections.Generic;
 
 public static class DB
 {
@@ -42,21 +43,21 @@ public static class DB
         connection.Open();
     }
 
-    public static void GetLevels(LevelInfo[] levels)
+    public static LevelInfo[] GetLevels()
     {
-        /*        string[] levelsinfo = new string[levels.Length];
-                for (int i = 0; i < levelsinfo.Length; i++)
-                {
-                   levelsinfo[i] = $"({i+1},'{JsonUtility.FromJson<LevelInfo[]>(stringifyedLevels)}')";
-                }*/
-        
+        List<LevelInfo> list = new List<LevelInfo>();
         DB.Open();
         SqliteCommand cmd = connection.CreateCommand();
-        cmd.CommandText = "SELECT * FROM saves";
-        cmd.ExecuteReader();
+        cmd.CommandText = "SELECT data FROM saves ORDER BY level";
+        using SqliteDataReader rd = cmd.ExecuteReader();
+        while (rd.Read())
+        {
+            LevelInfo li = JsonUtility.FromJson<LevelInfo>(rd.GetString(0));
+            list.Add(li);
+        }
+        rd.Close();
         DB.Close();
-
-        
+        return list.ToArray();
     }
 
     public static void InsertLevels(LevelInfo[] levels)
@@ -70,6 +71,20 @@ public static class DB
         SqliteCommand cmd = connection.CreateCommand();
         cmd.CommandText = $"INSERT INTO saves (level, data) VALUES {string.Join(",", stringifyedLevels)};";
         cmd.ExecuteNonQuery();
+        DB.Close();
+    }
+
+    public static void SaveLevels(LevelInfo[] levels)
+    {
+        DB.Open();
+        for (int i = 0; i < levels.Length; i++)
+        {
+            string level = (i + 1).ToString();
+            string data = JsonUtility.ToJson(levels[i]);
+            SqliteCommand cmd = connection.CreateCommand();
+            cmd.CommandText = $"UPDATE saves SET data = '{data}' WHERE level = {level};";
+            cmd.ExecuteNonQuery();
+        }
         DB.Close();
     }
 
