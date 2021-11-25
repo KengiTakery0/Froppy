@@ -83,11 +83,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(horizonInput));
         
         body.velocity = new Vector2((horizonInput * Speed * Time.deltaTime), body.velocity.y);
-        //spriteRenderer.flipX = horizonInput == -1f;
-        if(horizonInput < 0 && is_FacingRight)
-        {
-            Flip();
-        }
+        if(horizonInput < 0 && is_FacingRight)  Flip();
         else if (horizonInput > 0 && !is_FacingRight) Flip();
     }
 
