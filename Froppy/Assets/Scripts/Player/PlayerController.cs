@@ -1,11 +1,5 @@
 using UnityEngine;
 
-enum PlayerState
-{
-    Idle,
-    Run,
-    Jump
-}
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float Speed = 4f;
@@ -16,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     private bool isWalled = false;
     private bool wallJump = false;
+    private bool is_FacingRight = true;
+
 
     private float horizonInput;
     private float verticalInput;
@@ -35,11 +31,6 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private PlayerState State
-    {
-        get { return (PlayerState)anim.GetInteger("State"); }
-        set { anim.SetInteger("State", (int)value); }
-    }
 
     private Animator anim;
     private Rigidbody2D body;
@@ -55,9 +46,10 @@ public class PlayerController : MonoBehaviour
 
 
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (!canJump) State = PlayerState.Jump;
+        Debug.Log(horizonInput);
+       // Debug.Log();
 
         ProcessMooving();
         ProcessClimbing();
@@ -73,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            State = PlayerState.Jump; Jump();
+             Jump();
         }
     }
     private void ProcessClimbing()
@@ -88,11 +80,15 @@ public class PlayerController : MonoBehaviour
     private void Moving()
     {
         horizonInput = Input.GetAxisRaw("Horizontal");
-        if (horizonInput != 0) State = PlayerState.Run;
-        else if (horizonInput == 0 && canJump) State = PlayerState.Idle;
-        spriteRenderer.flipX = horizonInput ==  -1;
-
+        anim.SetFloat("Speed", Mathf.Abs(horizonInput));
+        
         body.velocity = new Vector2((horizonInput * Speed * Time.deltaTime), body.velocity.y);
+        //spriteRenderer.flipX = horizonInput == -1f;
+        if(horizonInput < 0 && is_FacingRight)
+        {
+            Flip();
+        }
+        else if (horizonInput > 0 && !is_FacingRight) Flip();
     }
 
 
@@ -107,6 +103,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void Flip()
+    {
+        is_FacingRight = !is_FacingRight;
+
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
     public void setWalled(bool walled)
     {
         this.isWalled = walled;
