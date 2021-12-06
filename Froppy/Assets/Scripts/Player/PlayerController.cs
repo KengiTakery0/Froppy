@@ -1,5 +1,12 @@
 using UnityEngine;
 
+
+public enum PlayerState
+{
+    Walk,
+    Jump,
+    Idle
+}
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float Speed = 4f;
@@ -16,6 +23,13 @@ public class PlayerController : MonoBehaviour
     private float horizonInput;
     private float verticalInput;
     private GroundChecker[] groundChecers;
+
+    private PlayerState State 
+    {
+        get { return (PlayerState)anim.GetInteger("State"); } 
+        set { anim.SetInteger("State", (int)value); } 
+    }
+
 
     private bool canJump
     {
@@ -38,10 +52,15 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+
         body = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         groundChecers = GetComponentsInChildren<GroundChecker>();
+
+       // if (!canJump) State = PlayerState.Jump;
+        //if (canJump) State = PlayerState.Idle;
+
     }
 
 
@@ -49,7 +68,6 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         Debug.Log(horizonInput);
-       // Debug.Log();
 
         ProcessMooving();
         ProcessClimbing();
@@ -58,6 +76,7 @@ public class PlayerController : MonoBehaviour
 
     private void ProcessMooving()
     {
+        State = PlayerState.Walk;
         Moving();
     }
 
@@ -65,6 +84,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
+            State = PlayerState.Jump;
              Jump();
         }
     }
@@ -80,7 +100,6 @@ public class PlayerController : MonoBehaviour
     private void Moving()
     {
         horizonInput = Input.GetAxisRaw("Horizontal");
-        anim.SetFloat("Speed", Mathf.Abs(horizonInput));
         
         body.velocity = new Vector2((horizonInput * Speed * Time.deltaTime), body.velocity.y);
         if(horizonInput < 0 && is_FacingRight)  Flip();
@@ -107,6 +126,7 @@ public class PlayerController : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+
     public void setWalled(bool walled)
     {
         this.isWalled = walled;
